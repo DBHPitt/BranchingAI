@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal Assistant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"> <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+  <audio autoplay>
+  <source src="AudioIn/JustinGreetingAudio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    <div class="container">
+  <p>There will be no compromise.
+
+<span class="cursor">| </span></p>
+<a href= "javascript:delay('MathewStart.html', 2000)" style="text-decoration: none;">
+<button style= type="button" class="button" button onclick="snd.play()" >
+Find an adult.
+</button>
+<script>
+    var snd = new Audio("AudioIn/JustinResponse1Audio.mp3");
+    function delay (URL, ms) {
+    setTimeout( function() { window.location = URL }, ms);
+}
+</script> </a>
+<a href="javascript:delay('https://www.justice.gov/criminal-ccips/reporting-computer-internet-related-or-intellectual-property-crime', 2500)" style="text-decoration: none;">
+<button style= type="button" class="button" button onclick=""="and.play()" >
+Report this.
+</button>
+<script>
+    var and = new Audio("AudioIn/JustinResponse2Audio.mp3");
+    function delay (URL, ms) {
+    setTimeout( function() { window.location = URL }, ms);
+}
+</script> </a>
+
+</div>
+
+</body>
+</html>

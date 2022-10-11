@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal Assistant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"> <link rel="stylesheet" href="style2.css">
+<script>
+window.onload = function(){
+  var theDelay = 10;
+  var timer = setTimeout("showText()",theDelay*800)
+}
+function showText(){
+  document.getElementById("delayedText").style.visibility = "visible";
+}
+</script>
+</head>
+<body>
+
+  <audio autoplay>
+  <source src="#" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    <div class="container">
+
+    <p style="font-size: 1em;"> Acessing broswer history... <br>
+      Checking cookies... <br>
+      Reading passwork manager...
+
+    </p>
+  <div id="delayedText" style="visibility:hidden">
+    <audio autoplay>
+    <source src="AudioIn/MathewDataReadAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p>Let's see. </p>
+<p> Oh you've got some fun stuff in here!
+<span class="cursor">| </span>
+</p>
+<a href= "javascript:delay('KendraStart.html', 1900)" style="text-decoration: none;">
+<button style= type="button" class="button" button onclick="snd.play()" >
+Leave (find help elsewhere).
+</button>
+<script>
+    var snd = new Audio("AudioIn/MathewDataReadLeaveAudio.mp3");
+    function delay (URL, ms) {
+  setTimeout( function() { window.location = URL }, ms);
+}
+</script> </a>
+
+</div>
+</div>
+
+</body>
+</html>

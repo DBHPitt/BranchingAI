@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal Assistant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"> <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+  <audio autoplay>
+  <source src= "AudioIn/KendraGreeting.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    <div class="container">
+  <p>Welcome sweetpea. </p>
+<p> How are you doin'?
+<span class="cursor">| </span>
+</p>
+  <a href= "javascript:delay('KendraSetup.html', 3200)" style="text-decoration: none;">
+  <button style= type="button" class="button" button onclick="wnd.play()" >
+  I'm excited to meet you.
+  </button>
+  <script>
+      var wnd = new Audio("AudioIn/KendraGreetResponse2Audio.mp3");
+        function delay (URL, ms) {
+      setTimeout( function() { window.location = URL }, ms);
+    }
+  </script> </a>
+<a href= "javascript:delay('KendraSetup.html', 2500)" style="text-decoration: none;">
+<button style= type="button" class="button" button onclick="and.play()" >
+I'm great, thanks for asking.
+</button>
+<script>
+    var and = new Audio("AudioIn/KendraGreetResponse1Audio.mp3");
+      function delay (URL, ms) {
+    setTimeout( function() { window.location = URL }, ms);
+  }
+</script> </a>
+<a href= "javascript:delay('KendraSetup.html', 2300)" style="text-decoration: none;">
+<button style= type="button" class="button" button onclick="fnd.play()" >
+You're too sweet.
+</button>
+<script>
+    var fnd = new Audio("AudioIn/KendraGreetResponse3Audio.mp3");
+      function delay (URL, ms) {
+    setTimeout( function() { window.location = URL }, ms);
+  }
+</script> </a>
+
+</div>
+
+</body>
+</html>

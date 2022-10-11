@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal Assistant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv = "refresh" content = "11.5; url = https://www.technology.pitt.edu/247-it-help-desk" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"> <link rel="stylesheet" href="style2.css">
+<script>
+window.onload = function(){
+  var theDelay = 10;
+  var timer = setTimeout("showText()",theDelay*1000)
+}
+function showText(){
+  document.getElementById("delayedText").style.visibility = "visible";
+}
+</script>
+</head>
+<body>
+
+  <audio autoplay>
+  <source src="AudioIn/KendraTechIssueConnecting.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    <div class="container">
+  <p>Weird. I'm having some trouble. <span class="cursor">| </span> </p>
+  <div id="delayedText" style="visibility:hidden">
+<p style="font-size: 1em;"> Acessing banking info... <br>
+  Accessing secure files... <br>
+  Accessing enterprise database...
+</div>
+
+</p>
+</div>
+
+</body>
+</html>
